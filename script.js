@@ -31,8 +31,5 @@ function compute()
 
 function slider_value(){
     var rate = document.getElementById("rate");
-    var ratedisplay = document.getElementById("rate_val");
     rate_val.innerText = rate.value+"%";
 }
-function ligia_function(){
-ligia.innerText = "hoje"}
