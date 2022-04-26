@@ -1,16 +1,53 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <body onload="slider_value()">
+        <div class="maindiv">
+                <h1>Simple Interest Calculator</h1>
+                <div id=table>
+                    <table id="table"><!--created a table to keep text and input area in two separate columns-->
+                    <tr><td>Amount</td>
+                        <td><input type="number" id="principal" name="principal" required></td></tr>
+                    <tr><td>Interest Rate</td>
+                        <td><input type="range" value="10,5" step="0.25" min="1" max="20" id="rate" name="rate" onchange="slider_value()"><span id="rate_val"></span></td></tr>
+                    <tr><td>No. of Years</td>
+                        <td><select id="years" name="years">
+                            <list for="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </list></select></td></tr>
+                        <tr><td><button onclick="compute() ; document.getElementById('text_result').style.display='block'">Compute Interest</button>
+                        </td></tr>
+                        <tr><td><p id="text_result" style ='display: none' >If you invest <span class="results" id="text_amount"></span>,<br>
+                            at an interest rate of <span class="results" id="text_rate"></span>.<br>
+                            You will receive <span class="results" id="profit"></span>,<br>
+                            in the year <span class="results" id="text_years"></span>.</p><br>
+                            </td></tr><!--included paragraph in table to have it aligned with the rest of the text-->
+                    </table>
+                    <br>
+                    
+                </div>
+                <br>
+        
+        <p></p>&copy Everyone Can Get Rich</p>    
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <footer>
 
-        <button onclick="compute()">Compute</button>
+            &#169; This Calculator belongs to Ligia Borges Silva
+    </footer>
+    </div>
+    
     </body>
 </html>

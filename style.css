@@ -1,4 +1,32 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family: Arial;
+    color:white;
+}
+h1{
+    color:grey;
+    font-family: Verdana;
+}
 
-
+.maindiv {
+    width: 500px;
+    /*300px as the instructions didn't fit the title in one single line, couldn't figure this out*/
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    /*found this solution online to center the main div. I'm using VS and it didn't accept a simple align:center instruction*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#table{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.results {
+    background-color: #FFFF00;
+/*created a span class to have all results highlighted at once*/
+}
