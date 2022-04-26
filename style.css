@@ -20,11 +20,11 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+#anchorleft{
+    margin-left: 20%;
+}
 #table{
     color: black;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 .results {
     background-color: #FFFF00;

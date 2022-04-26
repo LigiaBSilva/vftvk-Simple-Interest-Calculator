@@ -8,6 +8,7 @@
     <body onload="slider_value()">
         <div class="maindiv">
                 <h1>Simple Interest Calculator</h1>
+                <div id="anchorleft"><!--a div to keep the input labels and results left aligned-->
                 <div id=table>
                     <table id="table"><!--created a table to keep text and input area in two separate columns-->
                     <tr><td>Amount</td>
@@ -29,13 +30,14 @@
                             <option value="10">10</option>
                         </list></select></td></tr>
                         <tr><td><button onclick="compute() ; document.getElementById('text_result').style.display='block'">Compute Interest</button>
-                        </td></tr>
-                        <tr><td><p id="text_result" style ='display: none' >If you invest <span class="results" id="text_amount"></span>,<br>
+                        </td></tr></table>
+
+                        <p id="text_result" style ='display: none' >If you invest <span class="results" id="text_amount"></span>,<br>
                             at an interest rate of <span class="results" id="text_rate"></span>.<br>
                             You will receive <span class="results" id="profit"></span>,<br>
                             in the year <span class="results" id="text_years"></span>.</p><br>
-                            </td></tr><!--included paragraph in table to have it aligned with the rest of the text-->
-                    </table>
+                    
+                </div>
                     <br>
                     
                 </div>
